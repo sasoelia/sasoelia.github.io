@@ -1,0 +1,1139 @@
+@font-face {
+    font-family: 'Druk Wide Bold';
+    src: url('../font/DrukWideBold.woff2') format('woff2'),
+        url('../font/DrukWideBold.woff') format('woff'),
+        url('../font/DrukWideBold.ttf') format('truetype');
+    font-weight: bold;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue LT Pro';
+    src: url('../font/HelveticaNeueLTProEx.otf') format('opentype');
+    font-weight: 500;
+    font-display: swap;
+}
+
+p {
+    font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+
+
+
+
+
+
+/* stili base e reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #FBFFF4;
+    color: #333;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+/* Menu mobile*/
+input[type="checkbox"] {
+    display: none !important;
+}
+
+#labelCheckbox,
+.hamburger-label {
+    display: none !important;
+}
+
+#mobileMenu {
+    display: none !important;
+}
+
+#mobileMenu ul li a {
+    font-family: 'Druk Wide Bold', Arial, sans-serif !important;
+    color: #FCF8EF;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+/* menu desktop visibilw */
+.rightSideHeader ul {
+    display: flex !important;
+}
+
+/* stili header */
+.header {
+    background-color: #4563FF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: relative;
+}
+
+.linkHome {
+    text-decoration: none;
+    color: #FCF8EF;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#logoHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+
+#logoHeader img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#nomesx {
+    font-family: 'Druk Wide Bold', Arial, sans-serif !important;
+    color: #FBFFF4;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/* Stili menu desktopp */
+.rightSideHeader ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.rightSideHeader li a {
+    font-family: 'Druk Wide Bold', Arial, sans-serif !important;
+    color: #FBFFF4;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    transition: all 0.2s ease;
+    padding: 8px 8px;
+    border-radius: 4px;
+}
+
+.rightSideHeader li a:hover {
+    color: #ff4545;
+    transform: translateY(-1px);
+}
+
+/* Homepage */
+.firstContainerHomepage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 30px;
+    gap: 40px;
+}
+
+.leftSideContainerHomepage {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    order: 2;
+}
+
+.illustration-container img {
+    width: 400px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.rightSideContainerHomepage {
+    flex: 1;
+    padding-right: 0;
+    order: 1;
+    max-width: 500px;
+}
+
+.rightSideContainerHomepage h1 {
+    font-family: 'Druk Wide Bold', Arial, sans-serif !important;
+    font-size: 3.5rem;
+    color: #4563FF;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.rightSideContainerHomepage h2 {
+    font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+    font-size: 1.4rem;
+    color: black;
+    line-height: 1.5;
+    font-weight: 800;
+}
+
+/*pulsanti*/
+.secondContainerHomepage {
+    text-align: center;
+    margin: 80px auto;
+    padding: 0 30px;
+}
+
+.bottomSideContainerHomepage button {
+    font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+    background-color: #FF4545;
+    color: #FCF8EF;
+    border: none;
+    padding: 18px 40px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.bottomSideContainerHomepage button:hover {
+    background-color: #FCF8EF;
+    color: #4563FF;
+    border: 2px solid #4563FF;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+}
+
+/*stile pagina progetti*/
+.projects-container {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 30px;
+}
+
+.projects-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.projects-header h1 {
+    font-family: 'Druk Wide Bold', Arial, sans-serif !important;
+    font-size: 4rem;
+    color: #FF4545;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+
+.project-image {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+
+
+.project-content {
+    text-align: center;
+    color: white;
+}
+
+.project-content p {
+    font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+    margin-top: 15px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+.project-info {
+    padding: 30px;
+    text-align: center;
+    background: #4563FF;
+}
+
+.project-info h3 {
+    font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+    font-size: 1.3rem;
+    color: #FCF8EF;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.project-card {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.project-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+
+/*stile progetto pagina singola*/
+.progetto-container {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 30px;
+}
+
+.progetto-titolo-centrato {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.progetto-titolo-centrato h1,
+.progetto-titolo-centrato h2 {
+    font-family: 'Druk Wide Bold', Arial, sans-serif !important;
+    font-size: 2.5rem;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.progetto-titolo-centrato h1 {
+    color: #FF4545;
+    font-size: 3.5rem
+}
+
+.progetto-titolo-centrato h2 {
+    color: #333;
+    font-size: 2rem
+}
+
+.progetto-header {
+    display: flex;
+    gap: 80px;
+    align-items: flex-start;
+    margin-bottom: 80px;
+}
+
+.progetto-immagine-hero {
+    order: 1;
+    flex: 0 0 400px;
+}
+
+.progetto-testo {
+    order: 2;
+    flex: 1;
+}
+
+.progetto-testo p {
+    font-family: 'Helvetica Neue LT Pro', Arial, sans-serif !important;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: black;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.hero-box {
+    width: 300px;
+    height: 300px;
+    background: #FBFFF4;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.progetto-divisore {
+    margin: 80px 0;
+    text-align: center;
+}
+
+.progetto-divisore svg {
+    width: 600px;
+    height: auto;
+}
+
+.progetto-galleria {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+}
+
+.galleria-elemento {
+    text-align: center;
+}
+
+
+.galleria-immagine {
+    width: 400px;
+    height: 400px;
+    background: #FBFFF4;
+    border-radius: 15px;
+    margin: 0 auto 20px auto; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+
+.galleria-immagine-orizzontale {
+    width: 100%;
+    max-width: 650px;
+    height: 530px;
+    background: #FBFFF4;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.galleria-immagine-orizzontale img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+
+
+.galleria-immagine img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.galleria-elemento h3 {
+    font-family: 'Helvetica Neue LT Pro', Arial, sans-serif !important;
+    font-size: 1.2rem;
+    color: #4563FF;
+    font-weight: 600;
+    margin: 0;
+}
+
+/*pagina about*/
+.about-container {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 30px;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.about-header h1 {
+    font-family: 'Druk Wide Bold', Arial, sans-serif !important;
+    font-size: 4rem;
+    color: #FF4545;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.about-content {
+    display: flex;
+    gap: 80px;
+    align-items: flex-start;
+    margin-bottom: 80px;
+    justify-content: space-between;
+}
+
+.about-image {
+    flex: 0 0 280px;
+    text-align: center;
+}
+
+.profile-image {
+    width: 280px;
+    height: 350px;
+    background: linear-gradient(135deg, #4563FF, #FF4545);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    box-shadow: 0 15px 35px rgba(77, 91, 207, 0.3);
+}
+
+.profile-info h3 {
+    font-size: 1.3rem;
+    color: #FF4545;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.profile-info p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.about-text {
+    flex: 1;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.about-text p {
+    font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    color: black;
+    text-align: justify;
+    font-weight: 600;
+}
+
+.decorative-line {
+    margin: 60px 0;
+    position: relative;
+    left: -300px;
+    width: 600px;
+    text-align: center;
+}
+
+.decorative-line svg {
+    width: 800px;
+    height: auto;
+}
+
+.skills-section {
+    padding-top: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.skills-grid {
+    display: flex;
+    justify-content: flex-start;
+    gap: 100px;
+    width: 100%;
+    margin: 0;
+}
+
+.skill-category {
+    flex: 0 0 300px;
+}
+
+.skill-category:first-child {
+    margin-left: 0;
+}
+
+.skill-category:last-child {
+    margin-left: auto;
+    margin-right: 0;
+    text-align: left;
+}
+
+.skill-category h3 {
+    font-family: 'Druk Wide Bold', Arial, sans-serif !important;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    font-weight: bold;
+    position: relative;
+}
+
+.skill-category:first-child h3 {
+    color: #FF4545;
+}
+
+.skill-category:last-child h3 {
+    color: #FF4545;
+}
+
+
+.skill-category ul {
+    list-style: none;
+}
+
+.skill-category li {
+    font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+    padding: 5px 0;
+    color: #4563FF;
+    font-size: 1.3rem;
+}
+
+
+.skill-category li:last-child {
+    border-bottom: none;
+}
+
+
+/* Foto about */
+.profilo-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* Font nome about */
+.nome-profilo {
+    font-family: 'Druk Wide Bold', Arial, sans-serif !important;
+}
+
+
+
+
+
+
+
+
+
+/*stili pagina contatti*/
+.contact-container {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 30px;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.contact-header h1 {
+    font-family: 'Druk Wide Bold', Arial, sans-serif !important;
+    font-size: 4rem;
+    color: #FF4545;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.contact-info-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.contact-icon {
+    flex-shrink: 0;
+}
+
+.contact-text {
+    color: #4563FF;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.social-section {
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.social-link {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FCF8EF;
+    text-decoration: none;
+    transform-origin: center;
+}
+
+.social-link.instagram,
+.social-link.linkedin,
+.social-link.twitter {
+    background: #FF4545;
+}
+
+
+/* Footer */
+footer {
+    background-color: #4563FF;
+    color: #FCF8EF;
+    padding: 40px 30px;
+    margin-top: 100px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-left p {
+    font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+    margin: 0 0 8px 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.footer-left p:first-child {
+    font-weight: bold;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-right .footer-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links li {
+    margin: 0 0 8px 0;
+    line-height: 1.4;
+}
+
+.footer-links li:last-child {
+    margin-bottom: 0;
+}
+
+.footer-links a {
+    font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+    color: #FCF8EF;
+    text-decoration: none;
+    font-size: 14px;
+    pointer-events: none;
+    cursor: default;
+}
+
+
+
+/*stile burger menu*/
+.hamburger-menu {
+    display: none !important;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: #FCF8EF;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/*menu a comparsa */
+#mobileMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #4563FF;
+    z-index: 1000;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#mobileMenu ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#mobileMenu ul li {
+    margin: 20px 0;
+}
+
+#mobileMenu ul li a {
+    color: #FCF8EF;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+#mobileMenu ul li a:hover {
+    color: #FF4545;
+}
+
+.close-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Responsive */
+@media (max-width: 932px) {
+
+    /* Menu */
+    #labelCheckbox,
+    .hamburger-label {
+        display: block !important;
+    }
+
+    .hamburger-menu {
+        display: flex !important;
+    }
+
+    #myCheckbox:checked~#mobileMenu {
+        display: flex !important;
+    }
+
+    .rightSideHeader ul {
+        display: none !important;
+    }
+
+    .firstContainerHomepage {
+        flex-direction: column;
+        text-align: center;
+        margin: 40px auto;
+        gap: 30px;
+        padding: 0 20px;
+        align-items: center;
+    }
+
+    .leftSideContainerHomepage {
+        order: 1;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0;
+        width: 100%;
+    }
+
+    .illustration-container img {
+        width: 250px;
+        height: auto;
+    }
+
+    .rightSideContainerHomepage {
+        order: 2;
+        padding-left: 0;
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .rightSideContainerHomepage h1 {
+        font-size: 2.2rem;
+        line-height: 1.1;
+        margin-bottom: 20px;
+    }
+
+    .rightSideContainerHomepage h2 {
+        font-size: 1rem;
+        line-height: 1.4;
+        margin-bottom: 0;
+        text-align: left;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .secondContainerHomepage {
+        margin: 40px auto 60px;
+    }
+
+    .bottomSideContainerHomepage button {
+        padding: 15px 30px;
+        font-size: 14px;
+    }
+
+    /* progetti responsive */
+    .projects-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .projects-container {
+        padding: 0 20px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        max-width: 100%;
+    }
+
+    .project-image {
+        height: 250px;
+    }
+
+    .project-info {
+        padding: 25px 20px;
+    }
+    .project-card {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.project-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+    /*stile pag progetto singolo responsive*/
+    .progetto-container {
+        padding: 40px 20px;
+    }
+
+    .progetto-header {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .progetto-testo h1,
+    .progetto-testo h2 {
+        font-size: 1.8rem;
+    }
+
+    .progetto-immagine-hero {
+        flex: none;
+        align-self: center;
+    }
+
+
+    .hero-box {
+        max-width: 280px;
+    }
+
+
+    .progetto-divisore svg {
+        width: 90%;
+        max-width: 300px;
+    }
+
+
+    .galleria-immagine {
+         width: 100%;
+        max-width: 350px;
+        height: 350px;
+    }
+
+.galleria-immagine-orizzontale {
+    width: 100%;
+    height: 300px; 
+    max-width: 100%;
+}
+
+
+
+
+    /* pag About responsive */
+    .about-header h1 {
+        font-size: 2.4rem;
+    }
+
+    .about-container {
+        padding: 0 20px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .about-image {
+        flex: none;
+        align-self: center;
+        order: 1;
+    }
+
+    .profile-image {
+        width: 200px;
+        height: 240px;
+        margin: 0 auto 15px;
+    }
+
+    .profile-info {
+        text-align: center;
+    }
+
+    .about-text {
+        order: 2;
+        padding-top: 0;
+        text-align: center;
+    }
+
+    .about-text p {
+        text-align: justify;
+        font-size: 0.9rem;
+        line-height: 1.2;
+        margin-bottom: 15px;
+        margin-top: 20px;
+    }
+
+    .decorative-line {
+        margin: 0px 40;
+        position: relative;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .decorative-line svg {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .skills-section {
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    .skills-grid {
+        display: block;
+        width: 100%;
+    }
+
+    .skill-category {
+        margin-bottom: 40px;
+        width: 100%;
+    }
+
+    .skill-category h3 {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .skill-category ul {
+        text-align: center;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    /* pag contattoi responsive */
+    .contact-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .contact-container {
+        padding: 0 20px;
+    }
+
+    .contact-content {
+        gap: 60px;
+    }
+
+    .contact-info-grid {
+        max-width: 100%;
+    }
+
+ 
+
+    .social-links {
+        gap: 25px;
+    }
+
+    .social-link {
+        width: 70px;
+        height: 70px;
+    }
+
+    /* Footer responsive */
+
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+        align-items: center;
+        text-decoration: none;
+
+    }
+
+    .footer-left {
+        text-align: center;
+    }
+
+    .footer-left p {
+        margin-bottom: 8px;
+        line-height: 1.4;
+    }
+
+    .footer-right {
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-direction: row;
+        gap: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-decoration: none;
+    }
+
+    .footer-links li {
+        margin: 0;
+        line-height: 1.4;
+    }
+
+    .footer-links a {
+        font-size: 13px;
+    }
+}
